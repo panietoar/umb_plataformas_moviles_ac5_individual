@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BuscaJuego</string>
+    <string-array name="generos">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Otro</item>
+        <item>Secreto</item>
+    </string-array>
+    <string-array name="consolas">
+        <item>Xbox</item>
+        <item>Playstation</item>
+        <item>Switch</item>
+        <item>PC</item>
+    </string-array>
+</resources>

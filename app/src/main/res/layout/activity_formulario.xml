@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".Formulario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="Ingresa tus datos"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtAlias"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/txtJuego"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:ems="10"
+                android:hint="Juego"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/selConsola"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:entries="@array/consolas" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/selGenero"
+                    android:layout_width="221dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:entries="@array/generos" />
+
+                <EditText
+                    android:id="@+id/txtEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Edad"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Horas de juego preferidas"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/txtHoraInicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Desde"
+                        android:inputType="time"
+                        android:textAlignment="center" />
+
+                    <EditText
+                        android:id="@+id/txtHoraFinal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Hasta"
+                        android:inputType="time"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:ems="10"
+                android:hint="Mensaje"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btnEncontrar"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="encontrarGrupo"
+                android:text="Encuentra Equipo!"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                android:textColor="@android:color/background_light"
+                android:textColorLink="@android:color/background_light" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
